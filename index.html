@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17221c">
+  <meta name="description" content="Nodokamori — のどか森. A quiet corner of the forest.">
+  <title>nodokamori — のどか森</title>
+  <link rel="preload" as="image" href="forest.jpg">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body { background: #17221c; color: #f5f3e9; font-family: Georgia, 'Times New Roman', serif; }
+    main { position: relative; min-height: 100svh; display: flex; align-items: flex-start; isolation: isolate; overflow: hidden; }
+    main::before { content: ''; position: absolute; inset: 0; z-index: -2; background: url('forest.jpg') center 48% / cover no-repeat; }
+    main::after { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(10, 21, 15, .40) 0%, rgba(10, 21, 15, .19) 30%, transparent 64%); }
+    .identity { padding: clamp(2rem, 6.5vw, 7rem); padding-top: clamp(3rem, 13vh, 9rem); text-shadow: 0 2px 20px rgba(0,0,0,.32); }
+    .japanese { margin: 0 0 .65rem; font-family: 'Hiragino Mincho ProN', 'Yu Mincho', 'Noto Serif CJK JP', serif; font-size: clamp(1.5rem, 2.6vw, 2.5rem); font-weight: 400; letter-spacing: .17em; }
+    h1 { margin: 0; font-size: clamp(2.25rem, 5vw, 5.2rem); font-weight: 400; letter-spacing: .045em; line-height: 1.15; }
+    @media (max-width: 650px) {
+      main::before { background-position: 57% center; }
+      main::after { background: linear-gradient(180deg, rgba(10, 21, 15, .42), rgba(10, 21, 15, .04) 55%); }
+      .identity { padding: 2rem 1.5rem; padding-top: max(3rem, 10svh); }
+      .japanese { font-size: 1.5rem; }
+      h1 { font-size: clamp(2.15rem, 9vw, 3.4rem); }
+    }
+  </style>
+</head>
+<body>
+  <main aria-label="Sunlight streaming through a misty forest at Tiger Mountain, Washington">
+    <div class="identity">
+      <p class="japanese" lang="ja">のどか森</p>
+      <h1>nodokamori</h1>
+    </div>
+  </main>
+</body>
+</html>
