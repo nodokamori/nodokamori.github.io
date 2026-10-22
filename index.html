@@ -17,12 +17,14 @@
     .identity { padding: clamp(2rem, 6.5vw, 7rem); padding-top: clamp(3rem, 13vh, 9rem); text-shadow: 0 2px 20px rgba(0,0,0,.32); }
     .japanese { margin: 0 0 .65rem; font-family: 'Hiragino Mincho ProN', 'Yu Mincho', 'Noto Serif CJK JP', serif; font-size: clamp(1.5rem, 2.6vw, 2.5rem); font-weight: 400; letter-spacing: .17em; }
     h1 { margin: 0; font-size: clamp(2.25rem, 5vw, 5.2rem); font-weight: 400; letter-spacing: .045em; line-height: 1.15; }
+    .copyright { position: absolute; right: max(1.5rem, env(safe-area-inset-right)); bottom: max(1.5rem, env(safe-area-inset-bottom)); margin: 0; color: rgba(255,255,255,.62); font: 400 12px/1.4 Georgia, 'Times New Roman', serif; letter-spacing: .035em; text-shadow: 0 1px 6px rgba(0,0,0,.55); }
     @media (max-width: 650px) {
       main::before { background-position: 57% center; }
       main::after { background: linear-gradient(180deg, rgba(10, 21, 15, .42), rgba(10, 21, 15, .04) 55%); }
       .identity { padding: 2rem 1.5rem; padding-top: max(3rem, 10svh); }
       .japanese { font-size: 1.5rem; }
       h1 { font-size: clamp(2.15rem, 9vw, 3.4rem); }
+      .copyright { right: max(1rem, env(safe-area-inset-right)); bottom: max(1rem, env(safe-area-inset-bottom)); font-size: 11px; }
     }
   </style>
 </head>
@@ -32,6 +34,7 @@
       <p class="japanese" lang="ja">のどか森</p>
       <h1>nodokamori</h1>
     </div>
+    <p class="copyright">&copy; 2026 nodokamori</p>
   </main>
 </body>
 </html>
